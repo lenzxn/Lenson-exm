@@ -11865,8 +11865,8 @@ textarea.form-control-lg {
 .btn-round {
   position: relative;
   margin-left: 0.8rem;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 3rem;
+  height: 3rem;
   padding: 0;
   border-radius: 50%;
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
@@ -11875,16 +11875,16 @@ textarea.form-control-lg {
 .btn-round span {
   position: absolute;
   background-color: #06162d;
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2.8rem;
+  height: 2.8rem;
   top: 0;
   right: 0;
   border-radius: 50%;
 }
 .btn-round span i {
   color: #fff;
-  font-size: 1.3rem;
-  line-height: 2.2rem;
+  font-size: 2rem;
+  line-height: 2.6rem;
 }
 .btn-round span:hover {
   background: linear-gradient(to right, #10458a, #4306a1, #5f3d9e);
@@ -11892,15 +11892,6 @@ textarea.form-control-lg {
 .btn-round:hover {
   border-color: #5f3d9e;
   background-color: #5f3d9e;
-}
-
-.active {
-  color: #007BFF; /* Highlight color */
-  font-weight: bold; /* Make active link bold */
-}
-
-section {
-  scroll-margin-top: 80px; /* Ensure section content isn't hidden */
 }
 
 .display-2 {
@@ -12272,6 +12263,15 @@ b.order-animation-border1 {
     margin-bottom: 2rem; /* Further reduce margin */
   }
 }
+.active {
+  color: #007BFF; /* Highlight color */
+  font-weight: bold; /* Make active link bold */
+}
+
+section {
+  scroll-margin-top: 80px; /* Ensure section content isn't hidden */
+}
+
 .togg {
   display: none;
 }
@@ -12298,6 +12298,7 @@ nav ul {
 nav li {
   border-radius: 5px;
   font-family: "Oxanium Variable Font", sans-serif;
+  font-size: 1rem;
   margin-right: 2rem;
   height: 50px;
   display: flex;
@@ -12315,7 +12316,7 @@ nav a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: rgb(232, 219, 219);
+  color: rgb(237, 236, 243);
 }
 
 nav li:hover {
@@ -12332,10 +12333,11 @@ nav li:hover {
 }
 
 .sidebar {
+  padding: 1rem;
+  top: 0;
+  right: 0;
   margin-bottom: 0;
   position: fixed;
-  right: 0;
-  top: 0;
   height: 100vh;
   width: 250px;
   backdrop-filter: blur(10px);
@@ -12359,6 +12361,13 @@ nav li:hover {
   .sidebar {
     width: 100%;
   }
+  nav li {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  nav a {
+    color: rgb(176, 168, 216);
+  }
 }
 @media (max-width: 800px) {
   .HideOnMobile {
@@ -12368,6 +12377,10 @@ nav li:hover {
     display: block;
   }
 }
+.button-container {
+  display: flex;
+}
+
 .sessions_content {
   background-color: #fff;
 }

@@ -2,6 +2,15 @@
 @use'../components/mixins' as*;
 
 
+.active {
+    color: #007BFF; /* Highlight color */
+    font-weight: bold; /* Make active link bold */
+}
+
+section {
+    scroll-margin-top: 80px; /* Ensure section content isn't hidden */
+}
+
 .togg{
     display: none;
 }
@@ -28,6 +37,7 @@ nav ul{
 nav li{
     border-radius: 5px;
     font-family:"Oxanium Variable Font", sans-serif;
+    font-size: 1rem;
     margin-right: 2rem;
     height: 50px;
     display: flex;
@@ -44,7 +54,7 @@ nav a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    color: rgb(232, 219, 219);
+    color: rgb(237, 236, 243);
 }
 
 nav li:hover{
@@ -63,10 +73,11 @@ nav li:hover{
 }
 
 .sidebar {
+    padding: 1rem;
+    top: 0;
+    right: 0;
     margin-bottom: 0;
     position: fixed;
-    right: 0;
-    top: 0;
     height: 100vh;
     width: 250px; 
     backdrop-filter: blur(10px);
@@ -90,6 +101,17 @@ nav li:hover{
     .sidebar{
         width: 100%;
     }
+
+    nav li{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    nav a{
+        color: rgb(176, 168, 216);
+    }
+
+   
  }
 
  @media(max-width: 800px) {
@@ -100,4 +122,8 @@ nav li:hover{
     .togg{
         display: block;
     }
+ }
+
+ .button-container{
+    display: flex;
  }
