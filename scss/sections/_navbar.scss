@@ -32,7 +32,7 @@ nav ul{
 
 nav li{
     border-radius: 5px;
-    font-family:"Oxanium Variable Font",sans-serif;
+    font-family:"sans-serif";
     margin-right: 2rem;
     height: 50px;
     display: flex;
@@ -103,7 +103,7 @@ nav li:hover{
     }
  }
 
- @media(max-width:400px){
+ @media(max-width:450px){
     .sidebar{
         width: 100%;
     }
