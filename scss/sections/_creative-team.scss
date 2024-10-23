@@ -1,0 +1,68 @@
+@use'../custom' as *;
+@use'../components/mixins' as*;
+
+.creativeteam-gallery{
+  padding: 20px;
+}
+
+
+.creativeteam-container{
+    @include mixgrad;  
+    padding: 0;
+    margin: 0;  
+}
+
+.gallery-box{
+  max-width: 1224px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.photo-column{
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-pic {
+  display: flex;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.gallery-pic img{
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+}
+
+figure {
+  display: inline;
+  position: relative; 
+  margin: 0;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0; /* Placera längst ner */
+  width: 100%; /* Låt den täcka hela bildens bredd */
+  background-color: rgba(61, 27, 77, 0.5); /* Halvtransparent bakgrund för att se igenom */
+  color: white; /* Vit textfärg */
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+}
+
+.gallery-pic:hover { 
+
+figcaption{
+  opacity: 1;
+  transform: scale(1);
+}
+}

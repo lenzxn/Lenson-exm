@@ -1,0 +1,110 @@
+@use'../custom' as *;
+@use'../components/mixins' as*;
+
+.nav-link.active {
+    color: red; 
+    font-weight: bold; 
+}
+
+
+.togg{
+    display: none;
+}
+
+nav{
+    position: fixed;
+    @include mixgrad;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100%; /* Full width */
+    z-index: 998;
+    box-shadow: white;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 300px;
+    min-height: 80px;
+}
+
+nav li{
+    border-radius: 5px;
+    font-family:"Oxanium Variable Font",sans-serif;
+    margin-right: 2rem;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav li:last-child{
+    margin-right: 1rem;
+}
+
+nav a{
+    height: 100%;
+    padding: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: rgb(232, 219, 219);
+}
+
+nav li:hover{
+    @include mixlight;
+}
+
+.logon{
+    margin-right: auto;
+    max-height: 100%;
+    max-width: 200px;
+
+    img{
+        max-width: 100%;
+
+    }
+}
+
+.sidebar {
+    margin-bottom: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px; 
+    @include mixgrad;
+    opacity: 0.8;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    box-shadow: -10px 0 5px rgba(0, 0, 0, 0.1); /* Proper box-shadow definition */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: none; /* This will be controlled by JavaScript */
+ }
+ 
+ .sidebar li {
+   width: 100%;
+ }
+ 
+ .sidebar a {
+   width: 100%;
+ }
+ 
+ @media(max-width: 800px) {
+    .HideOnMobile{
+    display: none;
+    }
+
+    .togg{
+        display: block;
+    }
+ }
+
+ @media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+ }
