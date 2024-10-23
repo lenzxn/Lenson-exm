@@ -27,7 +27,7 @@ nav ul{
 
 nav li{
     border-radius: 5px;
-    font-family:"sans-serif";
+    font-family:"Oxanium Variable Font", sans-serif;
     margin-right: 2rem;
     height: 50px;
     display: flex;
@@ -69,7 +69,6 @@ nav li:hover{
     top: 0;
     height: 100vh;
     width: 250px; 
-    opacity: 0.8;
     backdrop-filter: blur(10px);
     z-index: 999;
     box-shadow: -10px 0 5px rgba(0, 0, 0, 0.1); /* Proper box-shadow definition */

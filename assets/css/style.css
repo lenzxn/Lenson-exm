@@ -11844,6 +11844,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "Oxanium Variable Font";
+  src: url(/assets/webfonts/Oxanium-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Chakra Petch";
+  src: url(/assets/webfonts/ChakraPetch-Medium.ttf);
+}
 @keyframes pulse-border {
   0% {
     transform: scale(1);
@@ -11895,14 +11903,6 @@ section {
   scroll-margin-top: 80px; /* Ensure section content isn't hidden */
 }
 
-@font-face {
-  font-family: "Oxanium Variable Font";
-  src: url(/assets/webfonts/Oxanium-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: "Chakra Petch";
-  src: url(/assets/webfonts/ChakraPetch-Medium.ttf);
-}
 .display-2 {
   margin-top: 1rem;
   margin-bottom: 3rem;
@@ -12272,11 +12272,6 @@ b.order-animation-border1 {
     margin-bottom: 2rem; /* Further reduce margin */
   }
 }
-.nav-link.active {
-  color: red;
-  font-weight: bold;
-}
-
 .togg {
   display: none;
 }
@@ -12284,11 +12279,11 @@ b.order-animation-border1 {
 nav {
   position: fixed;
   background: linear-gradient(to right, black, #06162d, #381b68);
+  box-shadow: -10px 0 5px rgba(0, 0, 0, 0.1);
   margin-bottom: 0;
   margin-top: 0;
   width: 100%; /* Full width */
   z-index: 998;
-  box-shadow: white;
 }
 
 nav ul {
@@ -12343,8 +12338,6 @@ nav li:hover {
   top: 0;
   height: 100vh;
   width: 250px;
-  background: linear-gradient(to right, black, #06162d, #381b68);
-  opacity: 0.8;
   backdrop-filter: blur(10px);
   z-index: 999;
   box-shadow: -10px 0 5px rgba(0, 0, 0, 0.1); /* Proper box-shadow definition */
@@ -12362,17 +12355,17 @@ nav li:hover {
   width: 100%;
 }
 
+@media (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+  }
+}
 @media (max-width: 800px) {
   .HideOnMobile {
     display: none;
   }
   .togg {
     display: block;
-  }
-}
-@media (max-width: 400px) {
-  .sidebar {
-    width: 100%;
   }
 }
 .sessions_content {
