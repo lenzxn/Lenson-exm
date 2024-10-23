@@ -1,11 +1,6 @@
 @use'../custom' as *;
 @use'../components/mixins' as*;
 
-.nav-link.active {
-    color: red; 
-    font-weight: bold; 
-}
-
 
 .togg{
     display: none;
@@ -14,11 +9,11 @@
 nav{
     position: fixed;
     @include mixgrad;
+    box-shadow: -10px 0 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 0;
     margin-top: 0;
     width: 100%; /* Full width */
     z-index: 998;
-    box-shadow: white;
 }
 
 nav ul{
@@ -74,7 +69,6 @@ nav li:hover{
     top: 0;
     height: 100vh;
     width: 250px; 
-    @include mixgrad;
     opacity: 0.8;
     backdrop-filter: blur(10px);
     z-index: 999;
@@ -93,6 +87,12 @@ nav li:hover{
    width: 100%;
  }
  
+ @media(max-width:500px){
+    .sidebar{
+        width: 100%;
+    }
+ }
+
  @media(max-width: 800px) {
     .HideOnMobile{
     display: none;
@@ -100,11 +100,5 @@ nav li:hover{
 
     .togg{
         display: block;
-    }
- }
-
- @media(max-width:500px){
-    .sidebar{
-        width: 100%;
     }
  }
