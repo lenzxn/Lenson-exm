@@ -37,7 +37,7 @@ $light:         $yellow;
 @import"../node_modules/bootstrap/scss/bootstrap.scss";
 
 @font-face {
-    font-family:"Oxanium Variable Font";
+    font-family:"Oxanium";
     src: url(/assets/webfonts/Oxanium-VariableFont_wght.ttf);
 }
 
@@ -45,3 +45,8 @@ $light:         $yellow;
     font-family:"Chakra Petch" ;
     src: url(/assets/webfonts/ChakraPetch-Medium.ttf);
 }
+
+html, body {
+    overflow-x: hidden;
+  }
+  

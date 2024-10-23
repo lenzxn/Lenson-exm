@@ -11845,13 +11845,17 @@ textarea.form-control-lg {
   }
 }
 @font-face {
-  font-family: "Oxanium Variable Font";
+  font-family: "Oxanium";
   src: url(/assets/webfonts/Oxanium-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: "Chakra Petch";
   src: url(/assets/webfonts/ChakraPetch-Medium.ttf);
 }
+html, body {
+  overflow-x: hidden;
+}
+
 @keyframes pulse-border {
   0% {
     transform: scale(1);
@@ -12263,6 +12267,10 @@ b.order-animation-border1 {
     margin-bottom: 2rem; /* Further reduce margin */
   }
 }
+.navbar-spacer {
+  height: 100px;
+}
+
 .active {
   color: #007BFF; /* Highlight color */
   font-weight: bold; /* Make active link bold */
@@ -12297,7 +12305,7 @@ nav ul {
 
 nav li {
   border-radius: 5px;
-  font-family: "Oxanium Variable Font", sans-serif;
+  font-family: "Oxanium", sans-serif;
   font-size: 1rem;
   margin-right: 2rem;
   height: 50px;
