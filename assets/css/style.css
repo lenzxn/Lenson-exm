@@ -11962,6 +11962,10 @@ html, body {
   font-family: "Chakra", sans-serif;
 }
 
+.text-muted {
+  display: none;
+}
+
 .contact-container {
   background: linear-gradient(to right, black, #06162d, #381b68);
   border-radius: 15px;
@@ -12043,6 +12047,7 @@ figure {
 }
 
 figcaption {
+  font-family: "Orbitron", sans-serif;
   position: absolute;
   bottom: 0; /* Placera längst ner */
   width: 100%; /* Låt den täcka hela bildens bredd */
@@ -12359,7 +12364,7 @@ nav li:hover {
   width: 100%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) {
   .sidebar {
     width: 100%;
   }
@@ -12371,7 +12376,7 @@ nav li:hover {
     color: rgb(255, 255, 255);
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .HideOnMobile {
     display: none;
   }

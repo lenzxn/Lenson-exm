@@ -103,7 +103,7 @@ nav li:hover{
    width: 100%;
  }
  
- @media(max-width:500px){
+ @media(max-width:1024px){
     .sidebar{
         width: 100%;
     }
@@ -120,7 +120,7 @@ nav li:hover{
    
  }
 
- @media(max-width: 800px) {
+ @media(max-width: 1024px) {
     .HideOnMobile{
     display: none;
     }
