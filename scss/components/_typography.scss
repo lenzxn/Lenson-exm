@@ -1,9 +1,10 @@
 @use'../custom' as *;
 
 @font-face {
-    font-family:"Roboto";
-    src: url(/assets/webfonts/Roboto-Regular.ttf);
+    font-family: "Chakra";
+    src: url(/assets/webfonts/ChakraPetch-Medium.ttf);
 }
+
 
 .display-2 {
     margin-top: 1rem;
@@ -25,7 +26,7 @@
     }
 
     &--introtxt{
-        font-family: "Roboto", sans-serif;
+        font-family: "Chakra", sans-serif;
         margin-top: 1.5rem;
         margin-bottom: 2rem;
         font-size: 1rem;
@@ -62,18 +63,18 @@
 }
 
 .brodtextlight{
-    font-family: "Roboto", sans-serif;
+    font-family: "Chakra", sans-serif;
     color: $white
 }
 
 .brodtext{
-    font-family: "Roboto", sans-serif;
+    font-family: "Chakra", sans-serif;
 }
 .brodtext-2{
-    font-family: "Roboto", sans-serif;
+    font-family: "Chakra", sans-serif;
     font-size: 1.2rem;
 }
 
 .emphasise{
-    font-family: "Orbitron", sans-serif;
+    font-family: "Chakra", sans-serif;
 }

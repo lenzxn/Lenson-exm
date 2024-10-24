@@ -11891,8 +11891,8 @@ html, body {
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url(/assets/webfonts/Roboto-Regular.ttf);
+  font-family: "Chakra";
+  src: url(/assets/webfonts/ChakraPetch-Medium.ttf);
 }
 .display-2 {
   margin-top: 1rem;
@@ -11912,7 +11912,7 @@ html, body {
   }
 }
 .display-2--introtxt {
-  font-family: "Roboto", sans-serif;
+  font-family: "Chakra", sans-serif;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   font-size: 1rem;
@@ -11949,21 +11949,21 @@ html, body {
 }
 
 .brodtextlight {
-  font-family: "Roboto", sans-serif;
+  font-family: "Chakra", sans-serif;
   color: #fff;
 }
 
 .brodtext {
-  font-family: "Roboto", sans-serif;
+  font-family: "Chakra", sans-serif;
 }
 
 .brodtext-2 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Chakra", sans-serif;
   font-size: 1.2rem;
 }
 
 .emphasise {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Chakra", sans-serif;
 }
 
 .contact-container {
@@ -12134,7 +12134,7 @@ figcaption {
 }
 .carousell-item p {
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Chakra", sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 1.8rem;
