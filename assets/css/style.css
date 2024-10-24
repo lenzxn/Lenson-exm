@@ -11891,11 +11891,7 @@ html, body {
 }
 
 @font-face {
-  font-family: "Oxanium";
-  src: url(../assets/webfonts/Oxanium-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: "Chakra Petch";
+  font-family: "Roboto";
   src: url(/assets/webfonts/Roboto-Regular.ttf);
 }
 .display-2 {
@@ -11916,7 +11912,7 @@ html, body {
   }
 }
 .display-2--introtxt {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   font-size: 1rem;
@@ -11953,16 +11949,16 @@ html, body {
 }
 
 .brodtextlight {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff;
 }
 
 .brodtext {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .brodtext-2 {
-  font-family: "Chakra Petch", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
 }
 
@@ -12305,7 +12301,7 @@ nav ul {
 
 nav li {
   border-radius: 5px;
-  font-family: "Oxanium", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   margin-right: 2rem;
   height: 50px;
