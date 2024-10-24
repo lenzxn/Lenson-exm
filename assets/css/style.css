@@ -11846,11 +11846,11 @@ textarea.form-control-lg {
 }
 @font-face {
   font-family: "Oxanium";
-  src: url(/assets/webfonts/Oxanium-VariableFont_wght.ttf);
+  src: url(../assets/webfonts/Oxanium-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: "Chakra Petch";
-  src: url(/assets/webfonts/ChakraPetch-Medium.ttf);
+  src: url(../assets/webfonts/ChakraPetch-Medium.ttf);
 }
 html, body {
   overflow-x: hidden;
