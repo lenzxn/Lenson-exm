@@ -11896,7 +11896,7 @@ html, body {
 }
 @font-face {
   font-family: "Chakra Petch";
-  src: url(/assets/webfonts/ChakraPetch-Medium.ttf);
+  src: url(/webfonts/ChakraPetch-Medium.ttf);
 }
 .display-2 {
   margin-top: 1rem;
