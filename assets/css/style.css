@@ -11848,16 +11848,6 @@ html, body {
   overflow-x: hidden;
 }
 
-@keyframes pulse-border {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.5);
-    opacity: 0;
-  }
-}
 .btn-round {
   position: relative;
   margin-left: 0.8rem;
@@ -11962,10 +11952,6 @@ html, body {
   font-family: "Chakra", sans-serif;
 }
 
-.text-muted {
-  display: none;
-}
-
 .contact-container {
   background: linear-gradient(to right, black, #06162d, #381b68);
   border-radius: 15px;
@@ -12049,10 +12035,10 @@ figure {
 figcaption {
   font-family: "Orbitron", sans-serif;
   position: absolute;
-  bottom: 0; /* Placera längst ner */
-  width: 100%; /* Låt den täcka hela bildens bredd */
-  background-color: rgba(61, 27, 77, 0.5); /* Halvtransparent bakgrund för att se igenom */
-  color: white; /* Vit textfärg */
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(61, 27, 77, 0.5);
+  color: white;
   padding: 10px;
   text-align: center;
   opacity: 0;
@@ -12076,7 +12062,7 @@ figcaption {
 }
 
 .accordion-full {
-  width: 1000px; /* Adjust as needed */
+  width: 1000px;
   margin-top: 2rem;
   border-radius: 8px;
 }
@@ -12092,16 +12078,16 @@ figcaption {
   border-radius: 8px;
 }
 
-@media (max-width: 768px) { /* For medium screens and down */
+@media (max-width: 768px) {
   .accordion-full {
-    width: 100%; /* Full width */
-    margin: 1rem; /* No margins */
+    width: 100%;
+    margin: 1rem;
   }
   .accordion-collapse {
-    margin: 0; /* No margins for collapse content */
+    margin: 0;
   }
   .accordion-header {
-    margin: 0; /* No margins for headers */
+    margin: 0;
   }
 }
 .carousell {
@@ -12110,12 +12096,12 @@ figcaption {
 }
 
 .carousell-inner {
-  height: 100%; /* Ensure inner carousel takes full height */
+  height: 100%;
 }
 
 .carousell-item {
-  height: 100%; /* Ensure each item takes full height */
-  overflow: hidden; /* Hide overflowing content */
+  height: 100%;
+  overflow: hidden;
 }
 .carousell-item h3 {
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
@@ -12143,16 +12129,15 @@ figcaption {
 }
 
 .carousell-item img {
-  height: 100%; /* Make the image fill the height */
-  width: 100%; /* Make the image fill the width */
-  object-fit: cover; /* Ensure the image covers the area without distortion */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
   opacity: 0.75;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
   #carouselmax {
-    height: 500px; /* Height for smaller screens */
+    height: 500px;
   }
   .carousel-caption h3 {
     font-size: 2.5rem;
@@ -12184,9 +12169,9 @@ figcaption {
   left: 0.2rem;
   width: 6.5rem;
   height: 5rem;
-  border: 0.55rem solid white; /* Changed from $white to plain white for CSS */
-  border-radius: 25%; /* Adjusted to give a more subtle rounded corner like the YouTube logo */
-  background-color: transparent; /* Ensure there's no fill color */
+  border: 0.55rem solid white;
+  border-radius: 25%;
+  background-color: transparent;
   animation: pulse-border 1s linear infinite;
 }
 
@@ -12198,6 +12183,16 @@ b.order-animation-border1 {
   animation-delay: 1.2s;
 }
 
+@keyframes pulse-border {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
 .management-container {
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -12239,29 +12234,28 @@ b.order-animation-border1 {
 
 @media (max-width: 768px) {
   .management__pic {
-    width: 5rem; /* Adjust size for smaller screens */
+    width: 5rem;
     height: 5rem;
   }
   .management__role {
-    padding-top: 1rem; /* Reduce padding */
-    margin-bottom: 3rem; /* Reduce margin */
+    padding-top: 1rem;
+    margin-bottom: 3rem;
   }
 }
-/* Media Query for Small Screens */
 @media (max-width: 576px) {
   .management__card {
-    padding: 1rem; /* Reduce padding for smaller screens */
-    margin-bottom: 3rem; /* Reduce margin between cards */
+    padding: 1rem;
+    margin-bottom: 3rem;
   }
   .management__pic {
     bottom: 25%;
-    width: 4rem; /* Further adjust size */
+    width: 4rem;
     height: 4rem;
   }
   .management__role {
-    font-weight: 400; /* Adjust font weight if needed */
-    padding-top: 0.5rem; /* Further reduce padding */
-    margin-bottom: 2rem; /* Further reduce margin */
+    font-weight: 400;
+    padding-top: 0.5rem;
+    margin-bottom: 2rem;
   }
 }
 .navbar-spacer {
@@ -12275,11 +12269,15 @@ b.order-animation-border1 {
 }
 
 section {
-  scroll-margin-top: 80px; /* Ensure section content isn't hidden */
+  scroll-margin-top: 80px;
 }
 
 .togg {
   display: none;
+}
+
+.sidebar-buttons {
+  display: flex;
 }
 
 nav {
@@ -12288,7 +12286,7 @@ nav {
   box-shadow: -10px 0 5px rgb(0, 0, 0);
   margin-bottom: 0;
   margin-top: 0;
-  width: 100%; /* Full width */
+  width: 100%;
   z-index: 998;
 }
 
@@ -12312,10 +12310,6 @@ nav li {
   align-items: center;
 }
 
-nav li:last-child {
-  margin-right: 1rem;
-}
-
 nav a {
   height: 100%;
   padding: 15px;
@@ -12329,12 +12323,12 @@ nav li:hover {
   background: linear-gradient(to right, #10458a, #4306a1, #5f3d9e);
 }
 
-.logon {
+.brand-logo {
   margin-right: auto;
   max-height: 100%;
   max-width: 200px;
 }
-.logon img {
+.brand-logo img {
   max-width: 100%;
 }
 
@@ -12352,8 +12346,8 @@ nav li:hover {
   z-index: 999;
   flex-direction: column;
   align-items: flex-start;
+  display: none;
   justify-content: flex-start;
-  display: none; /* This will be controlled by JavaScript */
 }
 
 .sidebar li {
@@ -12384,10 +12378,6 @@ nav li:hover {
     display: block;
   }
 }
-.button-container {
-  display: flex;
-}
-
 .sessions_content {
   background-color: #fff;
 }

@@ -31,11 +31,10 @@ $light:         $yellow;
 
 // scss-docs-end theme-color-variables
 
-
-
 //IMPORT BOOTSTRAP
 @import"../node_modules/bootstrap/scss/bootstrap.scss";
 
+//gömma all overflow och vertikalt-scroll
 html, body {
   overflow-x: hidden;
 }

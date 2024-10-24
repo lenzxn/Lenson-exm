@@ -48,35 +48,35 @@
 @media (max-width: 768px) {
     .management {
         &__pic {
-            width: 5rem; /* Adjust size for smaller screens */
+            width: 5rem; 
             height: 5rem;
         }
         
         &__role {
-            padding-top: 1rem; /* Reduce padding */
-            margin-bottom: 3rem; /* Reduce margin */
+            padding-top: 1rem; 
+            margin-bottom: 3rem; 
         }
     }
 }
 
-/* Media Query for Small Screens */
+//Media Query for Small Screens */
 @media (max-width: 576px) {
     .management {
         &__card {
-            padding: 1rem; /* Reduce padding for smaller screens */
-            margin-bottom: 3rem; /* Reduce margin between cards */
+            padding: 1rem; 
+            margin-bottom: 3rem; 
         }
 
         &__pic {
             bottom: 25%;
-            width: 4rem; /* Further adjust size */
+            width: 4rem; 
             height: 4rem;
         }
         
         &__role {
-            font-weight: 400; /* Adjust font weight if needed */
-            padding-top: 0.5rem; /* Further reduce padding */
-            margin-bottom: 2rem; /* Further reduce margin */
+            font-weight: 400; 
+            padding-top: 0.5rem; 
+            margin-bottom: 2rem; 
         }
     }
 }

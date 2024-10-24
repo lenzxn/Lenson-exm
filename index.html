@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LZ MUSIC</title>
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="./assets/images/LENZON.png">
     <link rel="stylesheet" href="./assets/css/style.css">
    
@@ -26,7 +27,7 @@
   </head>
 <body>
 
-    <!-- Navbar egen -->
+    <!-- Navbar egen, se _navbar.scss -->
     <nav menu navbar navbar-expand-lg navbar-dark bg-light shadow fixed-top>
         <ul class="sidebar">
             <li>
@@ -51,7 +52,8 @@
             <li>
                 <a href="#contactus">Contact</a>
             </li>
-            <div class="button-container">
+            <!-- Social media buttons, se _buttons.scss -->
+            <div class="sidebar-buttons">
             <a href="https://www.youtube.com/" target="_blank">
                 <button type="button" class="rounded-pill btn-round">
                     <span>
@@ -77,8 +79,8 @@
         </ul>
 
         <ul>
-            <a class="logon" href="#">
-                <img src="./assets/images/ENZON.png" alt="logo1">
+            <a class="brand-logo" href="index.html">
+                <img src="./assets/images/ENZON.png" alt="LZ-Logo">
             </a>
             <li class="HideOnMobile">
                 <a href="index.html">Home</a>
@@ -107,10 +109,10 @@
             </li>
         </ul>
     </nav>
-    
-<div class="navbar-spacer"></div>
+        
+    <div class="navbar-spacer"></div>
 
-        <!-- HOME SEKTION MED 'CAROUSEL' -->
+        <!-- INTRO SEKTION MED ''CAROUSELL'' se _intro-section.scss -->
     <div id="carouselmax" class="carousell carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselmax" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -160,7 +162,6 @@
       </button>
     </div>
 
-    <!-- Home-sektion -->
     <section id="intro" class="intro-section">
       <div class="container intro-container">
           <div class="row align-items-center justify-content-center text-white">
@@ -173,7 +174,7 @@
                           At lenzon-Studios, we bring sound, vision, and creativity to life. Check out our work, from recording your next hit to shaping your visual identity. Together, let's create something extraordinary!
                       </span>
                   </h2>
-                  <!-- HOME video -->
+                  <!-- intro video -->
               </div>
               <div class="col-md-6 intros text-end">
                   <div class="video-box">
@@ -203,7 +204,7 @@
       <path fill="url(#gradient)" d="M0,320L24,288C48,256,96,192,144,154.7C192,117,240,107,288,122.7C336,139,384,181,432,181.3C480,181,528,139,576,133.3C624,128,672,160,720,197.3C768,235,816,277,864,261.3C912,245,960,171,1008,144C1056,117,1104,139,1152,160C1200,181,1248,203,1296,186.7C1344,171,1392,117,1416,90.7L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path>
     </svg>
 
-    <!-- Who Are We Section -->
+    <!-- Who Are We Section- se _faq.scss -->
     <section id="faq" class="who-are-we">
       <div class="container">
         <div class="row text-center">
@@ -288,7 +289,7 @@
         </div>
     </section>
 
-    <!-- Top SVG Gradient -->
+    <!-- Top SVG Gradient - se _svg.scss -->
     <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
         <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -299,7 +300,8 @@
         </defs>
         <path fill="url(#gradient)" fill-opacity="1" d="M0,288L14.1,245.3C28.2,203,56,117,85,112C112.9,107,141,181,169,224C197.6,267,226,277,254,266.7C282.4,256,311,224,339,202.7C367.1,181,395,171,424,160C451.8,149,480,139,508,165.3C536.5,192,565,256,593,234.7C621.2,213,649,107,678,85.3C705.9,64,734,128,762,144C790.6,160,819,128,847,122.7C875.3,117,904,139,932,165.3C960,192,988,224,1016,202.7C1044.7,181,1073,107,1101,101.3C1129.4,96,1158,160,1186,208C1214.1,256,1242,288,1271,288C1298.8,288,1327,256,1355,202.7C1383.5,149,1412,75,1426,37.3L1440,0L1440,320L1425.9,320C1411.8,320,1384,320,1355,320C1327.1,320,1299,320,1271,320C1242.4,320,1214,320,1186,320C1157.6,320,1129,320,1101,320C1072.9,320,1045,320,1016,320C988.2,320,960,320,932,320C903.5,320,875,320,847,320C818.8,320,791,320,762,320C734.1,320,706,320,678,320C649.4,320,621,320,593,320C564.7,320,536,320,508,320C480,320,452,320,424,320C395.3,320,367,320,339,320C310.6,320,282,320,254,320C225.9,320,198,320,169,320C141.2,320,113,320,85,320C56.5,320,28,320,14,320L0,320Z"></path>
     </svg>
-    
+    <!-- Sessions-section - se _sessions.scss -->
+    <section id="sessions">
     <div class="sessions">
         <div class="container">
             <div class="row text-center">
@@ -309,7 +311,6 @@
             </div>
         </div>
     </div>
-    <section id="sessions">
     
     <!-- Bottom SVG Gradient -->
     <svg class="svg-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -325,7 +326,7 @@
     
     
     <!-- Sessions Container -->
-    <div class="sessions-container container">
+    <div class="container">
       <!-- Session 1: Text first, Image second -->
       <div class="sessions-row row align-items-center">
         <div class="col-lg-6 col-md-6 order-md-1 order-1 col-sm-12 sessions-placeholder mt-4">
@@ -362,6 +363,7 @@
     </div>
     </section>
     
+    <!-- Top SVG Gradient - se _svg.scss -->
     <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
         <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -372,7 +374,8 @@
         </defs>
         <path fill="url(#gradient)" fill-opacity="1" d="M0,288L14.1,245.3C28.2,203,56,117,85,112C112.9,107,141,181,169,224C197.6,267,226,277,254,266.7C282.4,256,311,224,339,202.7C367.1,181,395,171,424,160C451.8,149,480,139,508,165.3C536.5,192,565,256,593,234.7C621.2,213,649,107,678,85.3C705.9,64,734,128,762,144C790.6,160,819,128,847,122.7C875.3,117,904,139,932,165.3C960,192,988,224,1016,202.7C1044.7,181,1073,107,1101,101.3C1129.4,96,1158,160,1186,208C1214.1,256,1242,288,1271,288C1298.8,288,1327,256,1355,202.7C1383.5,149,1412,75,1426,37.3L1440,0L1440,320L1425.9,320C1411.8,320,1384,320,1355,320C1327.1,320,1299,320,1271,320C1242.4,320,1214,320,1186,320C1157.6,320,1129,320,1101,320C1072.9,320,1045,320,1016,320C988.2,320,960,320,932,320C903.5,320,875,320,847,320C818.8,320,791,320,762,320C734.1,320,706,320,678,320C649.4,320,621,320,593,320C564.7,320,536,320,508,320C480,320,452,320,424,320C395.3,320,367,320,339,320C310.6,320,282,320,254,320C225.9,320,198,320,169,320C141.2,320,113,320,85,320C56.5,320,28,320,14,320L0,320Z"></path>
     </svg>
-    
+    <!-- Creative team-sektion - se _creative-team.scss -->
+    <section id="creativeteam">
     <div class="creativeteam-container">
         <div class="row text-center">
             <h1 class="display-4 fw-bold"> CREATIVE TEAM </h1>
@@ -380,7 +383,7 @@
             <p class="brodtextlight lead pt1">Highest in industry</p>
         </div>
     </div>
-    <!--Svg gradient-->
+    <!-- Bottom SVG Gradient - se _svg.scss -->
     <svg class="svg-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
         <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -392,10 +395,9 @@
         <path fill="url(#gradient)" d="M0,320L24,288C48,256,96,192,144,154.7C192,117,240,107,288,122.7C336,139,384,181,432,181.3C480,181,528,139,576,133.3C624,128,672,160,720,197.3C768,235,816,277,864,261.3C912,245,960,171,1008,144C1056,117,1104,139,1152,160C1200,181,1248,203,1296,186.7C1344,171,1392,117,1416,90.7L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path>
     </svg>
     
-    
-    <section id="creativeteam">
-  <div class="container">
-      <!-- Sessions content-->
+    <!-- Creative-team content -->
+    <div class="container">
+      <!-- text first image second-->
       <div class="sessions-row row align-items-center">
           <div class="col-lg-6 col-md-6 order-md-1 order-1 col-sm-12 col-xs-12 sessions-placeholder mt4">
               <div class="sessions_content">
@@ -416,7 +418,8 @@
               </div>
           </div>
       </div>
-      <!--Sessions content-->
+
+      <!-- image first text second-->
       <div class="sessions-row row align-items-center">
           <div class="order-md-3 order-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 sessions-placeholder mt4">
               <div class="sessions_content">
@@ -437,301 +440,304 @@
               </div>
           </div>
       </div>
-  </div>
+    </div>
   
           
-        
-  <div class="gallery-box">
-    <div class="photo-column">
-        <div class="gallery-pic">
-            <figure>
-                <img src="./assets/images/gallery1.PNG" alt="">
-                <figcaption>Album Cover</figcaption>
-            </figure>
+    <!--flex-Gallery - se _creative-team.scss -->
+    <div class="gallery-box">
+        <div class="photo-column">
+            <div class="gallery-pic">
+                <figure>
+                    <img src="./assets/images/gallery1.PNG" alt="Album Cover">
+                    <figcaption>Album Cover</figcaption>
+                </figure>
+            </div>
+            <div class="gallery-pic">
+                <figure>
+                    <img src="./assets/images/gallery2.jpg" alt="Artist Visual">
+                    <figcaption>Artist Visual</figcaption>
+                </figure>
+            </div>
+            <div class="gallery-pic">
+                <figure>
+                    <img src="./assets/images/gallery3.JPG" alt="Artist: Lenzon">
+                    <figcaption>Artist: Lenzon</figcaption>
+                </figure>
+            </div>
         </div>
-        <div class="gallery-pic">
-            <figure>
-                <img src="./assets/images/gallery2.jpg" alt="">
-                <figcaption>Artist Visual</figcaption>
-            </figure>
+
+        <div class="photo-column">
+            <div class="gallery-pic">
+                <figure>
+                    <img src="./assets/images/gallery4.PNG" alt="AMIGXS">
+                    <figcaption>AMIGXS</figcaption>
+                </figure>
+            </div>
+            <div class="gallery-pic">
+                <figure>
+                    <img src="./assets/images/gallery5.JPG" alt="Artist">
+                    <figcaption>Artist</figcaption>
+                </figure>
+            </div>
+            <div class="gallery-pic">
+                <figure>
+                    <img src="./assets/images/gallery6.JPG" alt="Studio Visuals">
+                    <figcaption>Studio Visuals</figcaption>
+                </figure>
+            </div>
         </div>
-        <div class="gallery-pic">
-            <figure>
-                <img src="./assets/images/gallery3.JPG" alt="">
-                <figcaption>Artist: Lenzon</figcaption>
-            </figure>
+        <div class="photo-column">
+            <div class="gallery-pic">
+                <figure>
+                    <img src="./assets/images/gallery1.PNG" alt="Album">
+                    <figcaption>Album</figcaption>
+                </figure>
+            </div>
+            <div class="gallery-pic">
+                <figure>
+                    <img src="./assets/images/gallery2.jpg" alt=".RAW Video">
+                    <figcaption>.RAW Video</figcaption>
+                </figure>
+            </div>
+            <div class="gallery-pic">
+                <figure>
+                    <img src="./assets/images/gallery3.JPG" alt="Artist:Lenzon">
+                    <figcaption>Artist:Lenzon</figcaption>
+                </figure>
+            </div>
         </div>
     </div>
+    </section>      
 
-    <div class="photo-column">
-        <div class="gallery-pic">
-            <figure>
-                <img src="./assets/images/gallery4.PNG" alt="">
-                <figcaption>AMIGXS</figcaption>
-            </figure>
+    <!-- Management-sektion - se _management.scss -->
+    <section id="mgmtm" class="management-section">     
+        <div class="management container management-container">
+            <div class="management-row row text-center">
+                <h1 class="display-4 fw-bold"> MANAGEMENT </h1>
+                <hr style="width: 150px; height: 4px; color:antiquewhite" class="mx-auto">
+                <p class="brodtextlight lead pt1">
+                    World-class network
+                </p>
+            </div>
+            <div class="row align-items-center">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!--Text-card-->
+                            <div class="management__card">
+                                <p class="lh-lg">
+                                    Ethan Cole is the visionary CEO and Founder of 
+                                    Lenzon Studios, known for his extensive network 
+                                    in the creative industry. With over a decade of 
+                                    experience, he has positioned Lenzon Studios as 
+                                    a leader in innovative projects, connecting 
+                                    artists and business leaders worldwide to 
+                                    empower talent and drive creativity.
+                                </p>
+                            </div>
+                            <!--Mgmt pictures-->
+                            <div class="management__pic">
+                                <img src="./assets/images/fakeper2.jpg" alt="dsFAf" class="rounded-circle img-fluid">
+                            </div>
+                            <!--name and role-->
+                            <div class="management__role brodtextlight">
+                                <h3> Ethna Cole </h3>
+                                <p class="lead fw-ligt">CEO AND FOUNDER</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Text-card-->
+                            <div class="management__card">
+                                <p class="lh-lg brodtext">
+                                    Ava Chen is a global Artist Manager with over 15 
+                                    years of experience and a vast network in the 
+                                    music industry. She has strong relationships with 
+                                    major labels and key influencers, ensuring her 
+                                    artists thrive while navigating complex contracts 
+                                    and building successful careers.
+                                </p>
+                            </div>
+                            <!--Mgmt pictures-->
+                            <div class="management__pic">
+                                <img src="./assets/images/fakeper.jpg" alt="dsFAf" class="rounded-circle img-fluid">
+                            </div>
+                            <!--name and role-->
+                            <div class="management__role brodtextlight">
+                                <h3> Ava chen </h3>
+                                <p class="lead fw-ligt"> Artist Manager</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <!--Text-card-->
+                            <div class="management__card">
+                                <p class="lh-lg brodtext">
+                                    Leo Ramirez is a renowned Artist Manager with a 
+                                    global network and over a decade of experience. 
+                                    He excels in elevating emerging talent, securing 
+                                    collaborations with major labels, and overseeing 
+                                    finance and contract negotiations. His strategic 
+                                    marketing campaigns and financial acumen ensure 
+                                    artists thrive in the competitive music industry.
+                                </p>
+                            </div>
+                            <!--Mgmt pictures-->
+                            <div class="management__pic">
+                                <img src="./assets/images/fakeper3.jpg" alt="dsFAf" class="rounded-circle img-fluid">
+                            </div>
+                            <!--name and role-->
+                            <div class="management__role brodtextlight">
+                                <h3> Leo Ramirez </h3>
+                                <p class="lead fw-ligt"> Finance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div class="gallery-pic">
-            <figure>
-                <img src="./assets/images/gallery5.JPG" alt="">
-                <figcaption>Artits</figcaption>
-            </figure>
-        </div>
-        <div class="gallery-pic">
-            <figure>
-                <img src="./assets/images/gallery6.JPG" alt="">
-                <figcaption>Studio Visuals</figcaption>
-            </figure>
-        </div>
-    </div>
-    <div class="photo-column">
-        <div class="gallery-pic">
-            <figure>
-                <img src="./assets/images/gallery1.PNG" alt="">
-                <figcaption>Album</figcaption>
-            </figure>
-        </div>
-        <div class="gallery-pic">
-            <figure>
-                <img src="./assets/images/gallery2.jpg" alt="">
-                <figcaption>.RAW Video</figcaption>
-            </figure>
-        </div>
-        <div class="gallery-pic">
-            <figure>
-                <img src="./assets/images/gallery3.JPG" alt="">
-                <figcaption>Artist:Lenzon</figcaption>
-            </figure>
-        </div>
-    </div>
-  </div>
-  </section>      
-
-
-  <section id="mgmtm" class="management-section">     
-      <div class="management container management-container">
-          <div class="management-row row text-center">
-              <h1 class="display-4 fw-bold"> MANAGEMENT </h1>
-              <hr style="width: 150px; height: 4px; color:antiquewhite" class="mx-auto">
-              <p class="brodtextlight lead pt1">
-                  World-class network
-              </p>
-          </div>
-          <div class="row align-items-center">
-              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <!--Text-card-->
-                          <div class="management__card">
-                              <p class="lh-lg">
-                                  Ethan Cole is the visionary CEO and Founder of 
-                                  Lenzon Studios, known for his extensive network 
-                                  in the creative industry. With over a decade of 
-                                  experience, he has positioned Lenzon Studios as 
-                                  a leader in innovative projects, connecting 
-                                  artists and business leaders worldwide to 
-                                  empower talent and drive creativity.
-                              </p>
-                          </div>
-                          <!--Mgmt pictures-->
-                          <div class="management__pic">
-                              <img src="./assets/images/fakeper2.jpg" alt="dsFAf" class="rounded-circle img-fluid">
-                          </div>
-                          <!--name and role-->
-                          <div class="management__role brodtextlight">
-                              <h3> Ethna Cole </h3>
-                              <p class="lead fw-ligt">CEO AND FOUNDER</p>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <!--Text-card-->
-                          <div class="management__card">
-                              <p class="lh-lg brodtext">
-                                  Ava Chen is a global Artist Manager with over 15 
-                                  years of experience and a vast network in the 
-                                  music industry. She has strong relationships with 
-                                  major labels and key influencers, ensuring her 
-                                  artists thrive while navigating complex contracts 
-                                  and building successful careers.
-                              </p>
-                          </div>
-                          <!--Mgmt pictures-->
-                          <div class="management__pic">
-                              <img src="./assets/images/fakeper.jpg" alt="dsFAf" class="rounded-circle img-fluid">
-                          </div>
-                          <!--name and role-->
-                          <div class="management__role brodtextlight">
-                              <h3> Ava chen </h3>
-                              <p class="lead fw-ligt"> Artist Manager</p>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <!--Text-card-->
-                          <div class="management__card">
-                              <p class="lh-lg brodtext">
-                                  Leo Ramirez is a renowned Artist Manager with a 
-                                  global network and over a decade of experience. 
-                                  He excels in elevating emerging talent, securing 
-                                  collaborations with major labels, and overseeing 
-                                  finance and contract negotiations. His strategic 
-                                  marketing campaigns and financial acumen ensure 
-                                  artists thrive in the competitive music industry.
-                              </p>
-                          </div>
-                          <!--Mgmt pictures-->
-                          <div class="management__pic">
-                              <img src="./assets/images/fakeper3.jpg" alt="dsFAf" class="rounded-circle img-fluid">
-                          </div>
-                          <!--name and role-->
-                          <div class="management__role brodtextlight">
-                              <h3> Leo Ramirez </h3>
-                              <p class="lead fw-ligt"> Finance</p>
-                          </div>
-                      </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                  </button>
-              </div>
-          </div>
-      </div>
-  </section>
-  
-  <section id="contactus">
-  <div class="container mt-5 brodtextlight contact-container" id="contact-form">
-    <h1 class="display-1">Contact Us!</h1>
-    <form id="contactForm" class="row g-3">
-        <div class="col-md-6">
-            <label for="firstname" class="form-label">First Name:</label>
-            <input type="text" class="form-control" id="firstname" required>
-        </div>
-        <div class="col-md-6">
-            <label for="lastname" class="form-label">Last Name:</label>
-            <input type="text" class="form-control" id="lastname" required>
-        </div>
-        <div class="col-md-8">
-            <label for="email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="col-md-4">
-          <label for="phone" class="form-label">Phone Number:</label>
-          <input type="tel" class="form-control" id="phone" required 
-                 pattern="^[0-9\s\-\+\(\)]+$" 
-                 oninvalid="this.setCustomValidity('Please enter a valid phone number (digits, spaces, dashes, parentheses, or plus signs are allowed).')"
-                 oninput="this.setCustomValidity('')">
-          <small class="form-text text-muted">Please enter a valid phone number (digits, spaces, dashes, parentheses, or plus signs are allowed).</small>
-        </div>
-        <div class="col-md-12">
-            <label for="message" class="form-label">Message:</label>
-            <textarea class="form-control" name="Message" id="message" rows="3"></textarea>
-        </div>
-        <div class="col-md-12 d-flex justify-content-center">
-            <button type="submit" class="submit-button btn btn-primary">Submit</button>
-        </div>
-    </form>
+    </section>
     
-    <!-- Hidden Thank You Message -->
-    <div class="row text-center mt-3">
-        <div class="col-md-12" id="thankYouMessage" style="display: none;">
-            <h3>Thank you! We have received your message.</h3>
+    <!-- Contact-sektion - se _contact.scss -->
+    <section id="contactus">
+    <div class="container mt-5 brodtextlight contact-container" id="contact-form">
+        <h1 class="display-1">Contact Us!</h1>
+        <form id="contactForm" class="row g-3">
+            <div class="col-md-6">
+                <label for="firstname" class="form-label">First Name:</label>
+                <input type="text" class="form-control" id="firstname" required>
+            </div>
+            <div class="col-md-6">
+                <label for="lastname" class="form-label">Last Name:</label>
+                <input type="text" class="form-control" id="lastname" required>
+            </div>
+            <div class="col-md-8">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="col-md-4">
+            <label for="phone" class="form-label">Phone Number:</label>
+            <input type="tel" class="form-control" id="phone" required 
+                    pattern="^[0-9\s\-\+\(\)]+$" 
+                    oninvalid="this.setCustomValidity('Please enter a valid phone number (digits, spaces, dashes, parentheses, or plus signs are allowed).')"
+                    oninput="this.setCustomValidity('')">
+            </div>
+            <div class="col-md-12">
+                <label for="message" class="form-label">Message:</label>
+                <textarea class="form-control" name="Message" id="message" rows="3"></textarea>
+            </div>
+            <div class="col-md-12 d-flex justify-content-center">
+                <button type="submit" class="submit-button btn btn-primary">Submit</button>
+            </div>
+        </form>
+        
+        <!-- Hidden Thank You Message -->
+        <div class="row text-center mt-3">
+            <div class="col-md-12" id="thankYouMessage" style="display: none;">
+                <h3>Thank you! We have received your message.</h3>
+            </div>
         </div>
     </div>
-  </div>
-  </section>
+    </section>
 
-  <footer>
-      <div class="footer-bottom">
-          <div class="container">
-              <div class="row text-white">
-                  <div class="col-6 d-flex justify-content-start align-items-center footer-bottom__copyright">
-                      © 2024 Lenzon Studios. All Rights Reserved.
-                  </div>
-                  <!-- Back to Top Button -->
-                  <div class="col-6 d-flex justify-content-end align-items-center">
-                      <a href="#top" class="back-to-top btn btn-primary mt-3">Back to Top</a>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </footer>
+    <!-- se _contact.scss -->
+    <footer>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row text-white">
+                    <div class="col-6 d-flex justify-content-start align-items-center footer-bottom__copyright">
+                        © 2024 Lenzon Studios. All Rights Reserved.
+                    </div>
+                    <!-- Back to Top Button -->
+                    <div class="col-6 d-flex justify-content-end align-items-center">
+                        <a href="#top" class="back-to-top btn btn-primary mt-3">Back to Top</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-  <script>
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-        e.preventDefault(); // Prevent form from refreshing the page
+    <!-- bootstrap javascript -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- Contact javascript -->
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form from refreshing the page
 
-        const formData = new FormData(this); // Collect the form data
+            const formData = new FormData(this); // Collect the form data
 
-        // Show the thank-you message right after form submission
-        document.getElementById('thankYouMessage').style.display = 'block';
+            // Show the thank-you message right after form submission
+            document.getElementById('thankYouMessage').style.display = 'block';
 
-        // Send form data to the endpoint (replace 'YOUR_ENDPOINT_URL' with the actual endpoint)
-        fetch('YOUR_ENDPOINT_URL', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Success:', data);
-        })
-        .catch(error => {
-            console.error('Error:', error);
-        });
-    });
-  </script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const toggler = document.querySelector('.togg');
-        const closeButton = document.querySelector('.close-btn');
-        const sidebarLinks = document.querySelectorAll('.sidebar a'); // Select all sidebar links
-
-        // Check if the toggler exists before adding event listeners
-        if (toggler) {
-            toggler.addEventListener('click', function (event) {
-                event.preventDefault();  // Prevents the link from reloading the page
-                toggleSidebar();
-            });
-        }
-
-        // Check if the close button exists before adding event listeners
-        if (closeButton) {
-            closeButton.addEventListener('click', function (event) {
-                event.preventDefault();  // Prevent default link behavior
-                closeSidebar();          // Close sidebar when the "X" is clicked
-            });
-        }
-
-        // Add event listeners to sidebar links to close the sidebar
-        sidebarLinks.forEach(link => {
-            link.addEventListener('click', function (event) {
-                closeSidebar(); // Close sidebar when a link is clicked
+            // Send form data to the endpoint (replace 'YOUR_ENDPOINT_URL' with the actual endpoint)
+            fetch('YOUR_ENDPOINT_URL', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
             });
         });
-    });
+    </script>
+    <!-- Mobil meny javascript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggler = document.querySelector('.togg');
+            const closeButton = document.querySelector('.close-btn');
+            const sidebarLinks = document.querySelectorAll('.sidebar a'); 
 
-    // Function to toggle sidebar visibility
-    function toggleSidebar() {
-        const sidebar = document.querySelector('.sidebar');
-        if (sidebar.style.display === 'none' || sidebar.style.display === '') {
-            sidebar.style.display = 'flex';
-        } else {
-            sidebar.style.display = 'none';
+            // Check if the toggler exists before adding event listeners
+            if (toggler) {
+                toggler.addEventListener('click', function (event) {
+                    event.preventDefault();  // Prevents the link from reloading the page
+                    toggleSidebar();
+                });
+            }
+
+            // Check if the close button exists before adding event listeners
+            if (closeButton) {
+                closeButton.addEventListener('click', function (event) {
+                    event.preventDefault();  
+                    closeSidebar();          
+                });
+            }
+
+            // Add event listeners to sidebar links to close the sidebar
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    closeSidebar(); // Close sidebar when a link is clicked
+                });
+            });
+        });
+
+        
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+                sidebar.style.display = 'flex';
+            } else {
+                sidebar.style.display = 'none';
+            }
         }
-    }
 
-    // Function to close the sidebar
-    function closeSidebar() {
-        const sidebar = document.querySelector('.sidebar');
-        sidebar.style.display = 'none';  // Ensure sidebar is hidden
-    }
-  </script>
-  
-  <script>
+        // Function to close the sidebar
+        function closeSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.style.display = 'none';  // Ensure sidebar is hidden
+        }
+    </script>
+     <!-- page scroll javascript -->
+    <script>
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("nav ul li a");
 
@@ -755,7 +761,7 @@
             }
         });
     });
-</script>
+    </script>
 
 </body>
 </html>

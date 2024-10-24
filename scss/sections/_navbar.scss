@@ -1,11 +1,12 @@
 @use'../custom' as *;
 @use'../components/mixins' as*;
 
+//Göra space mellan navbar och första content
 .navbar-spacer{
     height: 100px;
 }
 
-
+// Highlight för att veta vilken subpage 
 .highlight {
     @include mixlight;
     border-radius: 5px;
@@ -13,12 +14,18 @@
 }
 
 section {
-    scroll-margin-top: 80px; /* Ensure section content isn't hidden */
+    scroll-margin-top: 80px; 
 }
 
+// Mobil-meny knapp
 .togg{
     display: none;
 }
+
+//social media buttons vertikalt
+.sidebar-buttons{
+    display: flex;
+ }
 
 nav{
     position: fixed;
@@ -26,7 +33,7 @@ nav{
     box-shadow: -10px 0 5px rgba(0, 0, 0, 1);
     margin-bottom: 0;
     margin-top: 0;
-    width: 100%; /* Full width */
+    width: 100%; 
     z-index: 998;
 }
 
@@ -49,9 +56,7 @@ nav li{
     justify-content: center;
     align-items: center;
 }
-nav li:last-child{
-    margin-right: 1rem;
-}
+
 
 nav a{
     height: 100%;
@@ -66,7 +71,7 @@ nav li:hover{
     @include mixlight;
 }
 
-.logon{
+.brand-logo{
     margin-right: auto;
     max-height: 100%;
     max-width: 200px;
@@ -87,12 +92,14 @@ nav li:hover{
     width: 250px; 
     background-color: rgba(12, 9, 18, 0.6);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    // webkit då backdropfilter inte fungerade på alla enheter
+    -webkit-backdrop-filter: blur(10px); 
     z-index: 999;
     flex-direction: column;
     align-items: flex-start;
+    display: none; 
+    //controlled by JavaScript
     justify-content: flex-start;
-    display: none; /* This will be controlled by JavaScript */
  }
  
  .sidebar li {
@@ -103,6 +110,7 @@ nav li:hover{
    width: 100%;
  }
  
+ //ipad pro
  @media(max-width:1024px){
     .sidebar{
         width: 100%;
@@ -128,8 +136,4 @@ nav li:hover{
     .togg{
         display: block;
     }
- }
-
- .button-container{
-    display: flex;
  }

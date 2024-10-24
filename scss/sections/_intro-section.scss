@@ -6,13 +6,14 @@
     @include mixgrad;
 }
 
+//Ensure inner carousel takes full height
 .carousell-inner {
-    height: 100%; /* Ensure inner carousel takes full height */
+    height: 100%; 
 }
 
 .carousell-item {
-    height: 100%; /* Ensure each item takes full height */
-    overflow: hidden; /* Hide overflowing content */
+    height: 100%; 
+    overflow: hidden; 
     
     h3{
         text-shadow: 2px 2px 5px rgba(0, 0, 0,1); 
@@ -40,17 +41,18 @@
     }
 }
 
+//Make the image fill the height
 .carousell-item img {
-    height: 100%; /* Make the image fill the height */
-    width: 100%; /* Make the image fill the width */
-    object-fit: cover; /* Ensure the image covers the area without distortion */
+    height: 100%;
+    width: 100%; 
+    object-fit: cover; 
     opacity: 0.75;
 }
 
-/* Media query for smaller screens */
+
 @media (max-width: 768px) {
     #carouselmax{
-        height: 500px; /* Height for smaller screens */
+        height: 500px; 
     }
 
     .carousel-caption {
@@ -97,9 +99,10 @@
     left: 0.2rem;
     width: 6.5rem;
     height: 5rem;
-    border: 0.55rem solid white; /* Changed from $white to plain white for CSS */
-    border-radius: 25%; /* Adjusted to give a more subtle rounded corner like the YouTube logo */
-    background-color: transparent; /* Ensure there's no fill color */
+    border: 0.55rem solid white; 
+    //Adjusted to give a more subtle rounded corner like the YouTube logo 
+    border-radius: 25%; 
+    background-color: transparent; 
     animation: pulse-border 1s linear infinite;
 }
 
@@ -109,5 +112,18 @@ b.order-animation-border1{
 
 .border-animation-border2{
     animation-delay: 1.2s;
+}
+
+@keyframes pulse-border {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    
 }
 

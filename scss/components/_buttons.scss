@@ -1,13 +1,14 @@
 @use'../custom' as *;
 @use'../components/mixins' as*;
-//Sass Nestning begränsar stilarna till enbart ''parent'' elementet och förhindrar stilkonflikter
+
+
 .btn-round{
     position: relative;
     margin-left: 0.8rem;
-    width: 3rem;     // Same width as the span element
-    height: 3rem;    // Same height as the span element
-    padding: 0;        // Remove padding to fit the span exactly
-    border-radius: 50%; // Make the button circular
+    width: 3rem;     
+    height: 3rem;    
+    padding: 0;        
+    border-radius: 50%; 
     border: 0.1rem solid rgba($white, 0.6);
     background-color: $white;
 
