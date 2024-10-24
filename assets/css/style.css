@@ -11844,14 +11844,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@font-face {
-  font-family: "Oxanium";
-  src: url(../assets/webfonts/Oxanium-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: "Chakra Petch";
-  src: url(../assets/webfonts/ChakraPetch-Medium.ttf);
-}
 html, body {
   overflow-x: hidden;
 }
@@ -11898,6 +11890,14 @@ html, body {
   background-color: #5f3d9e;
 }
 
+@font-face {
+  font-family: "Oxanium";
+  src: url(../assets/webfonts/Oxanium-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Chakra Petch";
+  src: url(/assets/webfonts/ChakraPetch-Medium.ttf);
+}
 .display-2 {
   margin-top: 1rem;
   margin-bottom: 3rem;
