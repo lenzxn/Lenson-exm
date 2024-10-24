@@ -12130,7 +12130,7 @@ figcaption {
 }
 .carousell-item p {
   text-shadow: 2px 2px 5px rgb(0, 0, 0);
-  font-family: "Chakra";
+  font-family: "Chakra", sans-serif;
   font-weight: 800;
   font-style: normal;
   font-size: 1.8rem;
