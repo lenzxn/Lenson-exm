@@ -11871,8 +11871,8 @@ html, body {
 .btn-round span {
   position: absolute;
   background-color: #06162d;
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 2.81rem;
+  height: 2.81rem;
   top: 0;
   right: 0;
   border-radius: 50%;
@@ -11880,7 +11880,7 @@ html, body {
 .btn-round span i {
   color: #fff;
   font-size: 2rem;
-  line-height: 2.6rem;
+  line-height: 2.75rem;
 }
 .btn-round span:hover {
   background: linear-gradient(to right, #10458a, #4306a1, #5f3d9e);
